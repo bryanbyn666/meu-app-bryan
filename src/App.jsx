@@ -2,15 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import { Titulo } from './Componentes/Titulo.jsx'  
 import './App.css'
 
-function Titulo() {
-  return (
-    <h1>Maconha</h1>
-  )
-}
 
-function Heroi() {
+function Hero () {
   return (
     <div className="hero">
       <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -62,7 +58,7 @@ function App() {
     <>
       <section id="center">
         <div className="hero">
-         <Heroi />
+         <Hero />
         </div>
         <div>
           <Titulo />
