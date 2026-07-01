@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react';
 import api from '../services/api';
 
+const { data } = await api.get('/posts');
+const { data: novo } = await api.post('/posts', {
+  title: 'Novo Post',
+  body: 'Conteúdo',
+  userId: 1,
+});  
+
 function usuarios() {
   const [usuarios, setUsuarios] = useState([]);
   const [loading, setLoading] = useState(true);

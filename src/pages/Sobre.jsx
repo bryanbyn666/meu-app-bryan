@@ -2,7 +2,7 @@ function Sobre() {
   return (
     <div>
       <h1>Sobre</h1>
-      <p>Esta é a página sobre.</p>
+      <p>Esta é a página sobre a empresa.</p>
     </div>
   );
 }
